@@ -1,1 +1,31 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 /* You can add global styles to this file, and also import other style files */
+
+@viewport {
+    zoom: 1;
+    width: device-width;
+}
+* {
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Mulish", sans-serif;
+    // font-family: "Playfair Display", serif;
+}
+html,
+body {
+    margin: 0;
+    height: 100% !important;
+}
+
+.register {
+    .mat-mdc-tab-label-container {
+        display: none !important;
+    }
+    .mat-mdc-tab-body-content {
+        padding-top: 8px;
+    }
+}
+
+mat-spinner {
+    width: 0 auto !important;
+}

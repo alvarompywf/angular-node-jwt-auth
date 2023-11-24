@@ -1,0 +1,31 @@
+{
+  "name": "users",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libsusers/src",
+  "prefix": "ask.me",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libsusers/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libsusers/**/*.ts", "libsusers/**/*.html"]
+      }
+    }
+  }
+}

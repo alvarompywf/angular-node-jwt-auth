@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ask.me/login": ["login/src/index.ts"]
+      "@ask.me/users": ["libs/users/src/index.ts"],
+      "@ask.me/login": ["libs/login/src/index.ts"],
+      "@ask.me/register": ["libs/register/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

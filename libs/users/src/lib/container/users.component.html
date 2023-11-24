@@ -1,0 +1,13 @@
+<div *ngIf="users$ | async as users">
+  <div *ngFor="let user of users; let i = index">
+    <hr />
+    <h3>Peronsa #{{ user.userId }}</h3>
+    <p>Nombre: {{ user.name }}</p>
+    <p>Apellido: {{ user.surname }}</p>
+    <p *ngIf="user.numberPhone">Number de telefono: {{ user.numberPhone }}</p>
+    <hr />
+  </div>
+  <div class="logout">
+    <button mat-raised-button (click)="logout()">Logout</button>
+  </div>
+</div>

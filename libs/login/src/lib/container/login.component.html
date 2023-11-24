@@ -1,0 +1,33 @@
+<form class="container" [formGroup]="form">
+  <div class="container-child">
+    <div class="form">
+      <div>
+        <h1>Login</h1>
+      </div>
+      <div>
+        <div>
+          <mat-form-field appearance="outline" class="example-form-field">
+            <mat-label>email</mat-label>
+            <input matInput type="text" formControlName="email" />
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="example-form-field">
+            <mat-label>password</mat-label>
+            <input matInput type="password" formControlName="password" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div>
+        <button mat-raised-button color="primary" (click)="onLogin()">
+          Login
+        </button>
+      </div>
+      <p class="sing-up">
+        Don't have an Account?
+        <a [routerLink]="['/register']" target="_self">Sign up</a>
+      </p>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+    background: rgb(29, 187, 97);
+    background: radial-gradient(circle, rgba(29, 187, 97, 1) 35%, rgba(0, 212, 255, 1) 95%);
+    .container-child {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+            background-color: white;
+            border-radius: 25px;
+            padding: 60px;
+            max-height: 700px;
+            width: 333px;
+            margin: 0 auto;
+        }
+    }
+
+    mat-tab {
+        padding: 24px;
+        background-color: red;
+    }
+}
+
+.sign-in {
+    font-size: 12px;
+    a {
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
